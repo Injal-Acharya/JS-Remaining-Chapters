@@ -1,0 +1,36 @@
+<!-- Practice Question-2: Create a website which is capable of storing bookmarks of your favourite websites using eventListener-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice-2</title>
+</head>
+<body>
+    <h1>Bookmarks</h1>
+    <button id = "ggl">Google</button>
+    <button id = "ggll">Google in New Window</button>   
+    <button id = "fb">Facebook</button>
+    <button id = "insta">Instagram</button>
+
+    <script>
+        let ggl = document.getElementById('ggl').addEventListener('click', funct = ()=> {
+            window.location = "https://google.com";
+        })
+
+        let ggll = document.getElementById('ggll').addEventListener('click', funct = ()=> {
+            let url = "https://google.com";
+            window.open(url, "Google", "width=1000, height=500");
+        })
+
+        let fb = document.getElementById('fb').addEventListener('click', funct = ()=> {
+            window.location = "https://fb.com";
+        })
+
+        let insta = document.getElementById('insta').addEventListener('click', funct = ()=> {
+            window.location = "https://instagram.com";
+        })
+    </script>
+</body>
+</html>

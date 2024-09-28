@@ -1,0 +1,72 @@
+<!-- Create a glowing bulb effect using classList toggle method in js -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing Bulb</title>
+
+    <style>
+
+        body {
+            
+            margin: 0;
+        }
+
+        .Bulb {
+            display: flex;
+            margin: auto;
+            margin-top: 100px;
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            border-radius: 50%;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        button {
+            margin-top: 50px;
+            margin-left: 300px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id = 'bulb' class="Bulb"></div>
+    <button id="switch" >ON</button>
+    <button id="flicker" >Flicker</button>
+    <button id="flickerOff" >Flicker OFF</button>
+
+    <script>
+
+        let switchh = document.getElementById('switch');
+
+        switchh.addEventListener('click', function () {
+            document.getElementById('bulb').classList.toggle('yellow');
+        });
+
+        let flick 
+
+        nonflick = () => {
+            clearInterval(flick);
+            document.getElementById('bulb').classList.remove('yellow');
+        }
+        
+        let flicker = document.getElementById('flicker');
+        flicker.addEventListener('click', function() {
+            flick = setInterval(function() {
+                    document.getElementById('bulb').classList.toggle('yellow');
+                }, 500);
+        });
+
+        let flickerOff = document.getElementById('flickerOff');
+        flickerOff.addEventListener('click', nonflick);
+
+    </script>
+</body>
+</html>

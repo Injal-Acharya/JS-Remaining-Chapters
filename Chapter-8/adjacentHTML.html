@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            background-color: red;
+            color: white;
+        }
+        .green {
+            background-color: green;
+            color: white;
+        }
+        .purple {
+            background-color: purple;
+            color: white;
+        }
+        .text-black {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="id">
+        Hell yeoo, this is a div
+    </div>
+    <div id="id1">Yeooo nothing just chillin</div>
+
+    <div id="id2" class="red">
+        ClassName and ClassList
+    </div>
+
+    <script>
+        document.getElementById('id').insertAdjacentHTML(`beforebegin`, `<p> Hello World before begin </p>`)
+        document.getElementById('id').insertAdjacentHTML(`afterbegin`, `<p> Hello World after begin </p>`)
+        document.getElementById('id').insertAdjacentHTML(`beforeend`, `<p> Hello World before end </p>`)
+        document.getElementById('id').insertAdjacentHTML(`afterend`, `<p> Hello World after end </p>`)
+
+        let id1 = document.getElementById('id1');
+        id1.remove();
+
+        document.getElementById('id2').className = "purple text-black"
+        document.getElementById('id2').classList.remove("red");
+        document.getElementById(`id2`).classList;
+        document.getElementById('id2').classList.add("red");
+        document.getElementById('id2').classList.add("blue");
+        document.getElementById('id2').classList.toggle("red");
+        
+        //setTimeout And setInterval
+        /* let timer1 = setTimeout(() => {
+            alert("Hello, I am timeout");
+        }, 3000); */
+        func = (a,b) => {
+            alert(`Hello, I'm timeout ` + (a+b));
+        }
+        let timer2 = setTimeout(func, 3000, 2, 3);
+
+        let timer3 = setInterval(func, 5000, 5, 5);
+        clearInterval(timer3);
+        clearTimeout(timer2);
+    </script>
+</body>
+</html>

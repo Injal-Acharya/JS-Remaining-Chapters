@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Events</title>
+</head>
+<body>
+    <div onmouseenter = "alert(`Mouse entered the div`)" style="background-color: purple; display: inline-block">On mouse enter</div>
+    <br>
+    <br>
+    <br>
+    <div onmouseover = "alert(`Mouse is over`)" style="background-color: purple; display: inline-block">on mouse over</div>
+    <br>
+    <br>
+    <br>
+    <div onmouseout = "alert(`Mouse is out`)" style="background-color: purple; display: inline-block">on mouse out</div>
+    <br>
+    <br>
+    <br>
+    <div ondblclick = "alert(`Double clicked`)" style="background-color: purple; display: inline-block">on double click</div>
+    <br>
+    <br>
+    <br>
+    <div onclick = "alert(` clicked`)" style="background-color: purple; display: inline-block">on click</div>
+    <br>
+    <br>
+    <br>
+    <input value="On mouse down and up" type = button onmousedown = "this.value = `MouseDown`" onmouseup = "this.value=`Mouse up`" style="background-color: purple; display: inline-block">
+    <br>
+    <br>
+    <br>
+    <div onmousemove = "alert(`Mouse moved`)" style="background-color: purple; display: inline-block">On mouse move</div>
+    <br>
+    <br>
+    <br>
+    <input value="Heyy" type = button onclick=funct() style="background-color: purple; display: inline-block"> 
+
+    <script>
+        funct = () => alert(`You clicked the button`);
+    </script>
+</body>
+</html>
