@@ -24,4 +24,4 @@ setTimeout(() => {
 
 setTimeout (() => {
     console.log("System compromised successfully ('.')")
-}, 5000)
+}, 4000)
