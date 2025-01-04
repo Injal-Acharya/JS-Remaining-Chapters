@@ -1,6 +1,7 @@
 setTimeout(() => {
     console.log("Hacking your system....")
 }, 1000)
+
 // setTimeout(() => {
 //     try {
 //     console.log(Rahul)
@@ -11,7 +12,7 @@ setTimeout(() => {
 // }, 2000)
 
 try {
-    console.log(Hehehehe)
+    console.log(Heheheh)
 }
 
 catch(heheh) {          //any name can be given to the error caught by the the catch... statement E.g here heheh is given as the error name
