@@ -19,6 +19,10 @@ catch(heheh) {          //any name can be given to the error caught by the the c
     console.log("An error has occured " + heheh)
 }
 
+finally {                               //finally clause can only be used along with try and catch only i.e it cannot be used alone in a program
+    console.log("This statement has to run anyhow")
+}
+
 setTimeout(() => {
     console.log("Please wait...")
 }, 3000)
