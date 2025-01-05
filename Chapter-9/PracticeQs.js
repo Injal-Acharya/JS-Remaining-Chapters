@@ -12,7 +12,7 @@ const loadscript = async (src) => {
     })
 }
 
-//Problem -1 Solution 
+//Problem -1 Solution [Write a program to load a JS File in a browser using Promises. Use .then() to display an alert when the load is complete.]
 
 // let a = loadscript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js")
 // a.then((value) => {
@@ -24,7 +24,7 @@ const loadscript = async (src) => {
 //     console.log(error)
 // })
 
-//Problem -2 Solution 
+//Problem -2 Solution [Write the same program from previous question and use async/await syntax]
 // let b = async () => {
 //     let c = await loadscript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js")   
 //     alert("Script loaded successfully") 
@@ -32,7 +32,7 @@ const loadscript = async (src) => {
 
 // b()
 
-//Problem -3 Solution
+//Problem -3 Solution [Create a promise which rejects after 3 seconds. Use an async/await to get its value. Use a try catch to handle its error.]
 // let a = async () => {
 //     return new Promise((resolve, reject) => {
 //         setTimeout (() => {
@@ -52,7 +52,7 @@ const loadscript = async (src) => {
 // }
 // b()
 
-//Problem -4 Solution
+//Problem -4 Solution [Write a program using Promise.all() inside an async/await to await 3 promises. Compare its results with the case where we await these promises one by one.]
 let p1 = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
