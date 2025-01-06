@@ -10,7 +10,7 @@ body {
     justify-content: center;
     /* flex-wrap: wrap; */
     /* align-content: center; */
-    padding: 0 6rem;
+    padding: 0 5rem;
 }
 
 p, .title {
@@ -28,7 +28,37 @@ div {
 }
 
 .text {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: rgb(6, 218, 6);
     opacity: 0;
+}
+
+a {
+    font-size: 1rem;
+    color:rgb(0, 255, 221);
+    justify-self: conter;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design for Android mobile devices */
+@media (max-width: 768px) {
+    body {
+        padding: 0 1rem;
+    }
+
+    p, .title {
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+
+    .text {
+        font-size: 1.2rem;
+    }
+
+    a {
+        font-size: 0.9rem;
+    }
 }
