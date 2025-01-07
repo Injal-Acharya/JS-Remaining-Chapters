@@ -17,3 +17,6 @@ console.log(sessionStorage.getItem(key))
 
 
 //Storage events
+window.onstorage = () => {
+    
+}
