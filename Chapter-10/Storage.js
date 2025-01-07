@@ -17,6 +17,7 @@ console.log(sessionStorage.getItem(key))
 
 
 //Storage events
-window.onstorage = () => {
-    
+window.onstorage = (event) => {
+    alert(`Value changed in the storage`)
+    console.log(event)
 }
