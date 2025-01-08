@@ -1,5 +1,5 @@
 console.log(document.cookie)
-document.cookie="injal=Acharya"
+document.cookie="injal=Acharya;"
 console.log(document.cookie)
 
 let key, value
