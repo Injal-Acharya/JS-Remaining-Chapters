@@ -19,5 +19,5 @@ p.__proto__ = {         //Now this object can also be accessed from the object '
 };
 
 a.__proto__ = p;
-// a.run();
+a.run();
 a.autorun();
