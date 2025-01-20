@@ -1,6 +1,6 @@
 class Animal {
     constructor (name, color) {                //Use of constructor
-        this.name = name;
+        this.name = Animal.capitalize(name);
         this.color = color;
     };
     run () {
@@ -13,6 +13,10 @@ class Animal {
     static onlyname (name) {                //Use of static keyword
         return new Animal(name, "Unknown");
     }
+
+    static capitalize(name) {
+        return name.charAt(0).toUpperCase() + name.substr(1, name.length);
+    };
 
     printoutput () {
         console.log(`Name: ${this.name} and Color: ${this.color}`);
@@ -37,15 +41,15 @@ class Monkey extends Animal {
     }
 };
 
-let Animal1 = new Animal(`Harry`, `Pale orange`);
+let Animal1 = new Animal(`harry`, `Pale orange`);
 Animal1.shout();
 Animal1.run();
 Animal1.printoutput();
-let Monkey1 = new Monkey(`Kumar`, `Pale yellow`, `chakchakey`);
+let Monkey1 = new Monkey(`kumar`, `Pale yellow`, `chakchakey`);
 Monkey1.jump();
 Monkey1.run();
 Monkey1.shout();
 Monkey1.printoutput();
 
-let Animal2 = Animal.onlyname('Anwit');       //This will invoke the static function in the super class
+let Animal2 = Animal.onlyname('anwit');       //This will invoke the static function in the super class
 Animal2.printoutput();
