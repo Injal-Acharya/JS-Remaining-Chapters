@@ -47,5 +47,5 @@ Monkey1.run();
 Monkey1.shout();
 Monkey1.printoutput();
 
-let Animal2 = Animal.onlyname('Anwit');
+let Animal2 = Animal.onlyname('Anwit');       //This will invoke the static function in the super class
 Animal2.printoutput();
